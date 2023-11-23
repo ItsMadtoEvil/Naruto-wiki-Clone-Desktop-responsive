@@ -9,12 +9,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Resume</title>
     <style>
+        *{
+            margin: 0%;
+        }
         #page{
-            height: auto;
-            width: 852px;
+            height: 2969px;
+            width: 1180px;
             align-content: center;
             align-items: center;
             align-self: center;
+            margin-top: 10px;
+            background-color: white;
         }
         .p1{
             text-align: left;
@@ -48,24 +53,107 @@
     </style>
 </head>
 <body>
-    <main><div>
-        
+    <main id="main">
+        <div style="height: fit-content, width: fit-content ;">
         <h1 id="myHeader">Resume Project</h1>
         <nav class="navbar" role="navigation">
+            <div class="navbar-inner"></div>
             <div class="container" >
-                
+                <ul class="ul1" id="navul" style="list-style: none;">
+                    <li class="nav">
+                        <a href="https://naruto.neoseeker.com/wiki/Main_Page" style="text-decoration: none;" class="navli1">Main</a>
+                    </li>
+                    <div class="dropdown">
+                        <a href="" onclick="myFunction()" class="dropbtn" ><b>Characters </b><i class="fa fa-caret-down"></i></a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="https://naruto.neoseeker.com/wiki/Category:Characters">All Characters</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Category:Kages">Kages</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Category:Groups/Organizations">Groups/Organizations</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Category:Animal_Summonings">Animal Summonings</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <a href="" onclick="myFunction()" class="dropbtn"><b>Episode Summaries </b><i class="fa fa-caret-down"></i></a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="https://naruto.neoseeker.com/wiki/Season_1">Season 1</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_2">Season 2</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_3">Season 3</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_4">Season 4</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_5">Season 5</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_6">Season 6</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_7">Season 7</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_8">Season 8</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_9">Season 9</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_10">Season 10</a>
+                          <a href="https://naruto.neoseeker.com/wiki/Season_11">Season 11</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <a href="" onclick="myFunction()" class="dropbtn"><b>Forums </b><i class="fa fa-caret-down"></i></a>
+                        <div id="myDropdown" class="dropdown-content-forums">
+                            <b style="color: gray;" id="rf">RELATED FORUMS</b>
+                          <a href="https://www.neoseeker.com/forums/35140/" class="fontsizenav">Ultimate Ninja 4: Naruto Shippuden Forum</a>
+                          <a href="https://www.neoseeker.com/forums/34377/" class="fontsizenav">Naruto: Uzumaki Chronicles 2 Forum</a>
+                          <a href="https://www.neoseeker.com/forums/26378/" class="fontsizenav">Naruto: Uzumaki Chronicles Forum</a>
+                          <a href="https://www.neoseeker.com/forums/39114/" class="fontsizenav">Naruto: Ultimate Ninja Storm Forum</a>
+                          <hr>
+                          <a href="https://www.neoseeker.com/forums/25323/" class="fontsizenav">NeoWiki Central Forum</a>
+                          <a href="https://www.neoseeker.com/forums/22152/" class="fontsizenav">Bugs</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <a href="" onclick="myFunction()" class="dropbtn"><b>Help </b><i class="fa fa-caret-down"></i></a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="">Register</a>
+                            <a href="">FAQ</a>
+                            <a href="">Editing help</a>
+                        </div>
+                      </div>
+                </ul>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            
         </nav>
         <div id="page">
-        <div><h2 id="myHeadera"> Naruto Uzumaki</h2><table align="right">
+            <div id="sidebar">
+                 <div style="margin-top: 8px;margin-bottom: 8px; border: black solid 1.5px; border-radius: 2px; float:left; padding-bottom:20px; padding-right:20px; display:block;">
+                    <ul style="padding-top:10px;">
+                        <li id="Tools">
+                            <p>Tools</p>
+                        </li>
+                        <li>
+                            <form id="searchform" action="/w/index.php" method="get">
+                                <label for="search">Search</label>
+                                <input type="hidden" name="title" value="Special:Search">
+                                <div>
+                                    <input type="search" name="search" id="searchInput" placeholder="Search" autocomplete="off">
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="ul1" style="width: fit-content;">
+                        <li><ul style="padding: 0%;padding-right:20px;">
+                        <li>Recent changes</li>
+                        <li>Image list</li>
+                        <li>Create Page</li>
+                        <li>Special Pages List</li>
+                        <li>Wanted Pages</li>
+                    </ul></li>
+                        <li><ul style="padding: 0%;padding-right:0px;">
+                    <li>Global changes</li>
+                    <li>Add File</li>
+                    <li>Categories</li>
+                    <li>Short Pages</li>
+                    <li>Edit NavMenu</li>
+                </ul></li>
+                    </ul> 
+                 </div>
+            </div>
+            <div id="pagebody">
+                <div><h2 id="myHeadera"> Naruto Uzumaki</h2><table align="right">
             <tr>
-                <td class="orange"><button>Page</button></td>
-                <td class="orange"><button>Discussion</button></td>
-                <td class="orange"><button>View History</button></td>
+                <td class="orange"><button class="box"><a href="https://naruto.neoseeker.com/wiki/Naruto_Uzumaki" class="orange">Page</a></button></td>
+                <td class="orange"><button class="box"><a href="https://naruto.neoseeker.com/wiki/Talk:Naruto_Uzumaki" class="orange">Discussion</a></button></td>
+                <td class="orange"><button class="box"><a href="https://naruto.neoseeker.com/w/index.php?title=Naruto_Uzumaki&action=history" class="orange">View History</a></button></td>
             </tr>
         </table></div>
             <div>
@@ -299,9 +387,10 @@
                     <a href="https://naruto.neoseeker.com/wiki/Special:WhatLinksHere/Naruto_Uzumaki" class="orange"><i class="fa fa-question-circle"></i> What links here</a>
                     <a href="" class="orange"><i class="fa fa-print"></i> Printable version</a>
                     <br>
-                    <a href="" class="orange"><i class="fa fa-reorder"></i> Related changes</a>
-                    <a href="" class="orange"><i class="material-icons">room</i>Permanent link</a>
+                    <a href="https://naruto.neoseeker.com/wiki/Special:RecentChangesLinked/Naruto_Uzumaki" class="orange"><i class="fa fa-reorder"></i> Related changes</a>
+                    <a href="https://naruto.neoseeker.com/w/index.php?title=Naruto_Uzumaki&oldid=2704" class="orange"><i class="material-icons">room</i>Permanent link</a>
                  </div>
+            </div>
         </div>
         <div>
             

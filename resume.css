@@ -1,3 +1,32 @@
+#Tools{
+  font-size: normal;
+  font-weight: 700;
+  font-family: helvetica neue,Helvetica,Arial,sans-serif;
+}
+.box{
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom-color: #b3b3b3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+#pagebody{
+  height: 2810px;
+  width: 860px;
+}
+#sidebar{
+  height: 2810px;
+  width: 300px;
+  float: right;
+}
 #alignleft{
     align-items: left;
     align-self: left;
@@ -13,14 +42,14 @@
     float: right;
 }
 #myHeadera{
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
     text-align: left;
     font-size: 35px;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 1);
     display: inline;
     border-radius: 4px;
-    border: orangered solid 1px;
+    border: #fc8f21 solid 2px;
     padding: 3px;
 }
 p {
@@ -35,6 +64,23 @@ p {
 div{
     display: block;
 }
+.container{
+    display: block;
+    background-color:#fc8f21;
+    border-radius: 2px;
+    padding-top: 8.2px;
+    padding-bottom: 8.2px;
+}
+.navli1{
+    text-decoration: none;
+    text-emphasis: none;
+    text-shadow:solid 2px #fc1804;
+    color: azure;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 2px;
+    font-size: 16px;
+}
 .orange{
     color: orange;
     display: inline;
@@ -45,7 +91,7 @@ div{
     border-spacing: 0cap;
 }
 .bgorange{
-    background-color: orange;
+    background-color:#fc8f21 ;
     padding: 0%;
 }
 .lightbg{
@@ -67,3 +113,94 @@ div{
     padding-bottom: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.ul1
+{
+  display:flex;  
+  list-style:none;
+}
+ul{
+  list-style: none;
+}
+.dropbtn {
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: inherit;
+    font-size: 16px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  .dropdown-content-forums {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content-forums a {
+    color: black;
+    padding: 3px 20px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content-forums a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown:hover .dropdown-content-forums {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropbtn {
+    text-decoration: none;
+  }
+  #bold{
+    font-weight: bold;
+  }
+  #rf{
+    padding: 2px 2px;
+  }
+  .fontsizenav{
+    font-size: medium;
+    padding: 3px 20px;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: orange;
+  }
+  
