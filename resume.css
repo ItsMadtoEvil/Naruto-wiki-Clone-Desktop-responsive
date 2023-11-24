@@ -113,6 +113,13 @@ div{
     padding-bottom: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.fbox {
+  float: left;
+  width: 278px;
+  height: fit-content;
+  margin: 0;
+  border: 3px solid #73AD21;  
+}
 .ul1
 {
   display:flex;  
