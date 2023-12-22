@@ -19,13 +19,23 @@
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
 #pagebody{
-  height: 2810px;
+  height: 2994px;
   width: 860px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 10px;
 }
 #sidebar{
-  height: 2810px;
+  height: 2994px;
   width: 300px;
   float: right;
+  /* position: absolute;
+  top: 0;
+  right: 0; */
 }
 #alignleft{
     align-items: left;
@@ -46,7 +56,7 @@
     margin-bottom: 10px;
     text-align: left;
     font-size: 35px;
-    background-color: rgba(255, 166, 0, 1);
+    background-image: linear-gradient( 135deg, #FF8008 10%, #FFC837 100%);
     display: inline;
     border-radius: 4px;
     border: #fc8f21 solid 2px;
@@ -66,7 +76,7 @@ div{
 }
 .container{
     display: block;
-    background-color:#fc8f21;
+    background-image: linear-gradient( 135deg, #FF8008 10%, #FFC837 100%);
     border-radius: 2px;
     padding-top: 8.2px;
     padding-bottom: 8.2px;
@@ -106,6 +116,7 @@ div{
     border: solid black 1px;
     border-radius: 3px;
     padding-right: 160px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .contentheading{
     color: #405872;
@@ -118,12 +129,25 @@ div{
   width: 278px;
   height: fit-content;
   margin: 0;
-  border: 3px solid #73AD21;  
+  border: 3px solid #73AD21; 
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+}
+.fbox a:hover{
+  background-color: #fbe74d;
+  padding: 1px;
+  text-decoration: underline;
+  border-radius: 2px;
 }
 .ul1
 {
   display:flex;  
   list-style:none;
+}
+.ul1 a:hover{
+  background-color: #fbe74d;
+  padding: 1px;
+  text-decoration: underline;
+  border-radius: 2px;
 }
 ul{
   list-style: none;
@@ -208,6 +232,89 @@ ul{
     padding: 3px 20px;
   }
   .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: orange;
+    background-image: linear-gradient( 135deg, #FF8008 10%, #FFC837 100%);
   }
-  
+  .backg{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+  .text1{
+    text-transform: uppercase;
+	background: linear-gradient(to right, #FF8008 20%, #FFC837 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  .mbody{
+    padding-left: 150px;
+    padding-right: 170px;
+  }
+  .container1{
+    width: 100%;
+    margin-top: 50px;
+    background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );
+    float: left;
+    text-decoration: none;
+  }
+  .part1{
+    align-content: start;
+    padding: 10px;
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-right: 50px;
+    max-width: max-content;
+    text-decoration: none;
+  }
+  .part1a1{
+    float: inline;
+    padding: 2px;
+  }
+  #part1{
+    float: left;
+    padding: 15px;
+    align-items: start;
+  }
+  #part2{
+    display: block;
+    padding: 15px;
+    padding-left: 200px;
+  }
+  #part3{
+    display: block;
+    padding: 15px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+  }
+  .part1a3{
+    color: white; text-decoration: none;
+    padding: 5px;
+  }
+  .part1a4{
+    color: white; text-decoration: none;
+    padding: 3px;
+  }
+  .part2{
+    float:right;
+    padding: 20px;
+    padding-top: 0;
+  }
+  .subpart2{
+    float: left;
+    padding: 20px;
+    padding-top: 0;
+    padding-right: 40px;
+  }
+  .subpart2a1{
+    float: left;
+    padding: 20px;
+    padding-top: 0;
+    padding-right: 40px;
+  }
+  .subpart2a2{
+    float: right;
+    padding:20px;
+    padding-top: 0;
+  }
+  .part2a1{
+    padding-top: 35px;
+    padding-right: 70px;
+  }
