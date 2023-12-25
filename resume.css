@@ -1,3 +1,50 @@
+*{
+  margin: 0%;
+}
+#page{
+  height: 2969px;
+  width: 1180px;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 10px;
+  height: 2994px;
+}
+.p1{
+  text-align: left;
+  word-spacing: 10px;
+}
+#myHeader{
+  font: italic;
+  background-color: antiquewhite;
+  text-decoration: underline;
+  text-align: center;
+}
+#naruto{
+border: 4px solid black;
+}
+main{
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: auto;
+}
+#orangebg{
+  background-color:orange;
+  text-align:left;
+  font-weight: bolder;
+  color: white;
+}
+#imgsize{
+width: 300px;
+height: 196px;
+}
+body {
+  background-image: url('647537.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 #Tools{
   font-size: normal;
   font-weight: 700;
@@ -19,15 +66,15 @@
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
 #pagebody{
-  height: 2994px;
-  width: 860px;
+  height: max-content;
+  width: fit-content;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 58px;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 3px;
   background-color: white;
-  margin-right: 10px;
+  margin-right: 310px;
 }
 #sidebar{
   height: 2994px;
@@ -254,6 +301,9 @@ ul{
     float: left;
     text-decoration: none;
   }
+  .container1 a:hover{
+    text-decoration: underline;
+  }
   .part1{
     align-content: start;
     padding: 10px;
@@ -263,10 +313,15 @@ ul{
     padding-right: 50px;
     max-width: max-content;
     text-decoration: none;
+  }  .part1 a:hover{
+    text-decoration: underline;
   }
   .part1a1{
     float: inline;
     padding: 2px;
+  }
+  .part1a1 a:hover{
+    text-decoration: underline;
   }
   #part1{
     float: left;
@@ -318,3 +373,74 @@ ul{
     padding-top: 35px;
     padding-right: 70px;
   }
+  @media only screen and (max-width: 767px) {
+  #pagebody {
+    width: 100%;
+    margin-right: 0;
+    padding: 8px;
+  }
+
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
+
+  .content {
+    padding-right: 8px;
+  }
+
+  .fbox {
+    width: 100%;
+    margin: 0;
+  }
+
+  .mbody {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .container1 {
+    margin-top: 20px;
+  }
+
+  .part1 {
+    padding-left: 8px;
+    padding-right: 8px;
+    max-width: 100%;
+  }
+
+  #part1 {
+    float: none;
+    padding: 15px;
+  }
+
+  #part2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #part3 {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 20px;
+  }
+
+  .part2,
+  .subpart2,
+  .subpart2a1,
+  .subpart2a2 {
+    float: none;
+    padding: 20px;
+    padding-top: 0;
+    padding-right: 8px;
+  }
+
+  .part1a3,
+  .part1a4 {
+    padding: 2px;
+  }
+
+  .part2a1 {
+    padding-right: 8px;
+  }
+}
